@@ -1,0 +1,191 @@
+.editProfile__container {  
+  margin: auto;
+  background-color: #313131; 
+  label {
+    color: #fff;
+  } 
+}
+
+.profile__fileInput {
+  max-width: 100%;
+}
+
+.editProfile__pict{
+    position: relative;
+    
+  }
+  
+  .editProfile__button, .editProfile__buttonRetour{
+    float: right;
+    margin-left: .5rem;
+    margin-right:.5rem;
+  }
+
+  .import__avatar {
+    display: inline-block;
+  }
+
+  .editProfile__buttonRetour{
+    bottom: -4rem;
+  }
+  
+  .editProfile__pict__cover {
+    z-index:0;
+    position: relative;
+    margin:auto;
+    height: 40vh;   
+    background-color: #E9E9E9;
+    width: 100%;
+    background-size: cover;
+    box-shadow: 2px 3px 5px 0 rgba(0,0,0, .4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+    background-position-y: -3rem;
+    margin-bottom: .5rem;
+    input {
+      margin:0;
+    }
+  }
+  .editProfile__pict__cover_input{
+    max-width: 35%;
+  }
+  .editProfile__pict__editProfile {
+    background-size: cover;  
+    height:120px;
+    width:120px; 
+    margin-left: .5rem;   
+    background-color: #E9E9E9;
+    box-shadow: 2px 3px 5px 0 rgba(0,0,0, .4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+    border-radius:50%;
+  }
+  
+  .editProfile__name{
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    margin-top:1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .editProfile__age, .editProfile__place{
+    font-size: 1rem;
+    margin-left: 0.8rem;
+    margin-right: 3rem;
+    font-weight: 500;
+  }
+
+  .editProfile__age{
+    width:25%;
+  }
+  
+  .editProfile__info{
+    margin-bottom: 0.3rem;
+  }
+  
+  .editProfile__title{
+    font-size: 1.4rem;
+    margin-left: 0.8rem;
+    font-weight: 700;
+    text-align:center;
+  }
+  
+  .editProfile__link{
+    display: inline-block;
+    font-size: 0.7rem; 
+  }
+  
+  .editProfile__description, .editProfile__exp{
+    margin:1rem 0.8rem;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    font-weight:600;
+    
+  }
+  
+  .editProfile__text{
+    margin:0.5rem 0.8rem;
+    font-weight:300;
+    text-align:justify;
+  }
+  
+  .editProfile__portfolio{
+    margin:0.5rem 0.8rem;
+    font-weight:600;
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+  
+  .editProfile__link{
+    display: inline-block;
+    font-size: 1rem;   
+    margin:0rem 0.8rem 0.8rem 0.8rem;
+  } 
+
+  
+  .editor{    
+    margin:0rem 0.8rem;
+    color: #000;
+}
+
+
+  @media (min-width: 900px) and (min-height: 500px) {
+  
+
+
+    .editProfile__pict__editProfile{
+      border: 2px solid #fff;
+      left: calc( 1100px / 2 - 75px);
+      top: calc( 40vh - 75px);
+      position: absolute;
+      height:150px;
+      width:150px; 
+      z-index: 999;   
+    }
+  
+    .editProfile__age, .editProfile__place{
+      margin-top:5rem;
+      margin-left: 1.5rem;
+    }
+
+    .editProfile__job{
+        margin-left: 1.5rem;
+    }
+  
+    .desktop{
+      display:inherit;
+      text-align: center;
+    }
+
+    .editProfile__mainInfos {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      justify-content: center;
+      div {
+        margin-right: 5rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: .5rem;
+        input {
+          margin: 0;
+        }
+      }
+    }
+    .editProfile__textArea {
+      margin-top: 2rem;
+      .editor {
+        background-color: #fff;
+        label {
+          color: #000;
+        }
+      }
+      div {
+        margin-top: 1rem;
+      }
+    }
+    .avatar__input {
+      margin: 0;
+      margin-right: .5rem;
+      margin-left: 150px;
+    }
+  
+  
+  }

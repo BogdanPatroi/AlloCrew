@@ -1,0 +1,143 @@
+@import 'style/vars.scss';
+
+
+
+
+
+
+.home__left {
+  display: none;
+}
+
+.home__navlink {
+  height: 3rem;
+  z-index: 999;
+  color: #000;
+  background-color: #313131;
+  position: sticky;
+  top: 3rem;
+  width: 100%;
+  border-bottom: 1px solid #313131;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+  ._blue {
+    border-color: $blue;
+    opacity: 1;
+  }
+}
+
+.home__navlink-links {
+  text-align: center;
+  opacity: 1;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: $blue;
+  list-style: none;
+  background-color: #313131;
+  border-bottom: 3px solid transparent;
+  transition: 600ms;
+  &:hover {
+    opacity: 1;
+    border-color: $blue;
+    cursor: pointer;
+    transition: 200ms;
+  }
+}
+
+
+.home__list {
+  font-size: 0.8rem;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) and (min-height: 500px) {
+  .home__left {
+    position: fixed;
+    display: block;
+    width: 15rem;
+  }
+
+  .home__profile {
+    text-align: center;
+    height: fit-content;
+    a {
+      color: #000;
+      &:hover {
+        text-decoration: underline;
+        color: $blue;
+      }
+    }
+    ul {
+      margin-left: 1rem;
+      list-style: none;
+      text-align: left;
+      li {
+        padding: .2rem;
+      }
+    }
+    input {
+      margin-top: 1rem;
+    }
+
+    .homeprofile__text { 
+      font-weight: 400;
+      font-size: 1rem;
+      color: rgb(218, 218, 218);    
+      padding: 1rem;
+      &--name {
+        font-size: 1.2rem;
+        font-weight: 400;
+        
+      }
+      &--role {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid  #F7B029;        
+        
+      }
+    }
+    .homeprofile__avatar {
+      margin: auto;
+      background-color: #ddd;
+      background-size: cover;
+      border-radius: 50%;      
+      height: 120px;
+      width: 120px;
+      box-shadow: 2px 3px 5px 0 rgba(0,0,0, .4);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+    }
+  }
+  .home__news {
+    background-color: #313131;
+    margin-top: .5rem;
+
+    height: 50vh;
+    margin: 0 13px 0 15px;
+  }
+ 
+  .home__liste{
+    color: rgb(218, 218, 218);
+    font-size:0.9rem;    
+    &:hover {
+      color: $blue;
+      opacity: 1;
+      border-color: $blue;
+      cursor: pointer;
+    }
+  }
+
+  .home__list {
+    
+    font-size: 1rem;
+    max-width: unset;
+    margin-left: calc(15rem + 1.5rem);
+  }
+}

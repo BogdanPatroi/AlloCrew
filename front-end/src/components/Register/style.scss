@@ -1,0 +1,38 @@
+@import 'style/vars.scss';
+
+.register__container {
+  height: 70vh;
+}
+
+.label {
+  color: #E9E9E9;
+  font-size: 1rem;
+}
+
+.register__form {
+  @include center;
+  height: 100%;
+  h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    color: #E9E9E9;
+    font-weight: 400;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #F7BE24; 
+  }
+
+}
+ .register__input {
+    @include inputStyle;
+ }
+
+ .register__button {
+    @include buttonStyle;
+ }
+
+ .register__input, .register__button {
+    margin: 1rem;
+    width: 20rem;
+ }
+

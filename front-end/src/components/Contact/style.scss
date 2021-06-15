@@ -1,0 +1,31 @@
+.contact__container {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    color: #E9E9E9;
+}
+
+.contact__input, .contact__textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+}
+
+.contact__textarea {
+    height: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact__container {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    
+  }
